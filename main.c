@@ -1,3 +1,6 @@
+//author Adarsh Kandwal
+//Cse Bao 
+
 #include<dirent.h>
 #include<string.h>
 #include<stdlib.h>
