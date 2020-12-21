@@ -19,3 +19,27 @@ int searchFordot(char []);//to find a dot in a file name
 char filepath[400];
 int countfiles;
 
+char * gettExtension(char *fullname)
+{
+    char* ext1;
+    ext1 = strrchr(fullname,'.');
+    return ext1+1;
+}
+
+char *getCmd(char filename[],char ext[],char final_cmd[])
+{
+    strcat(final_cmd,"mkdir ");
+    strcat(final_cmd,ext);
+    char cmd2[400]=" && move ";
+    char finalfilename[400]="\"";
+
+    strcat(finalfilename,filename);
+    strcat(finalfilename,"\"");
+
+    strcat(cmd2,finalfilename);
+    strcat(cmd2," ");
+    strcat(cmd2,ext);
+    strcat(final_cmd,cmd2);
+    return final_cmd;
+
+}
