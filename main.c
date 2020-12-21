@@ -43,3 +43,12 @@ char *getCmd(char filename[],char ext[],char final_cmd[])
     return final_cmd;
 
 }
+int searchFordot(char filename[])
+{
+    int i=0;
+    while(i<strlen(filename)){
+        if(filename[i]=='.') return 1;
+        else i++;
+    }
+    return 0;
+}
