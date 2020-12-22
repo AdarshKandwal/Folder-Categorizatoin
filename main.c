@@ -52,4 +52,13 @@ int searchFordot(char filename[])
     }
     return 0;
 }
+
+int searchForSpace(char filename[])
+{
+    int i=0;
+    while(i<strlen(filename))
+    {
+        if(filename[i]=='.') return 1;
+        else i++;
+    }
 //hello
