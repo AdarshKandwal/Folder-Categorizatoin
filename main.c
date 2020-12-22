@@ -62,5 +62,5 @@ int searchForSpace(char filename[])
         else i++;
     }
     return 0;
-    
+}
 //hello
