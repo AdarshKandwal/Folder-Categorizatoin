@@ -61,4 +61,6 @@ int searchForSpace(char filename[])
         if(filename[i]=='.') return 1;
         else i++;
     }
+    return 0;
+    
 //hello
