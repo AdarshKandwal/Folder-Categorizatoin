@@ -69,3 +69,7 @@ int searchForSpace(char filename[])
 int main(int argc, char* argv[])
 {
    clock_t t;
+    t = clock();
+   strcpy(filepath,intilizeitall(argc,argv));
+   printf("the path of file is %s",filepath);
+   getNames(filepath);
