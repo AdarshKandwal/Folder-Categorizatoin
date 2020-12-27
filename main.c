@@ -64,3 +64,8 @@ int searchForSpace(char filename[])
     return 0;
 }
 //hello
+
+
+int main(int argc, char* argv[])
+{
+   clock_t t;
