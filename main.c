@@ -73,3 +73,11 @@ int main(int argc, char* argv[])
    strcpy(filepath,intilizeitall(argc,argv));
    printf("the path of file is %s",filepath);
    getNames(filepath);
+ t = clock() - t;
+
+   double time_taken = ((double)t)/CLOCKS_PER_SEC; // in seconds
+
+   printf("fun() took %f seconds to execute  %d number of files \n", time_taken,countfiles);
+
+   return(0);
+}
