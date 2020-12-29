@@ -73,7 +73,15 @@ void getNames(char filepath[]){
 
     if (d)
     {
+     while ((dir = readdir(d)) != NULL)
+        {
+            int dx;
+            int size=strlen(dir->d_name);
+            char filename[size+10];
+            char *ext;
 
+            strcpy(filename,dir->d_name);
+         
 
 
 int main(int argc, char* argv[])
