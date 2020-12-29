@@ -65,6 +65,16 @@ int searchForSpace(char filename[])
 }
 //hello
 
+void getNames(char filepath[]){
+    DIR *d;
+    struct dirent *dir;
+    d = opendir(filepath);
+    char final_cmd[1000]="";
+
+    if (d)
+    {
+
+
 
 int main(int argc, char* argv[])
 {
