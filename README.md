@@ -1,4 +1,4 @@
-# Folder-Categorization (X{ version
+# Folder-Categorization 
 Categorization of files and folder based on content and type in c
 
 <h2>1. Target folder </h2><br>
